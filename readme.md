@@ -1,6 +1,3 @@
-layout: page
-title: "EHULER"
-permalink: /
 # Ongi etorri
 UPV/EHUko matematika ikasleen elkartea gara, gehitu nahi bazara mail bat bidali ehuler.00@gmail.com helbidera
 # Bienvenido
