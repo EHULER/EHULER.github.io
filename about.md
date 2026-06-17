@@ -1,23 +1,19 @@
 ---
 layout: page
-title: Nor gara / Quiénes somos
-permalink: /about/
+title: Quiénes somos
+permalink: /quienes-somos/
+lang: es
+ref: about
 ---
 
-# Nor gara?
-
-EHULER Euskal Herriko Matematika Ikasleen Elkartea da.
-
-UPV/EHUko matematika ikasleak elkartzeko, jarduerak antolatzeko eta informazioa partekatzeko sortutako elkartea gara.
-
-# ¿Quiénes somos?
+# Quiénes somos
 
 EHULER es la Euskal Herriko Matematika Ikasleen Elkartea.
 
-Somos una asociación de estudiantes de matemáticas de la UPV/EHU creada para reunir estudiantes, organizar actividades y compartir información.
+Somos una asociación de estudiantes de matemáticas de la UPV/EHU. Nuestro objetivo es crear un espacio de encuentro para el alumnado, organizar actividades y compartir información de interés para estudiantes de matemáticas.
 
-## Kontaktua / Contacto
+## Qué hacemos
 
-[ehuler.00@gmail.com](mailto:ehuler.00@gmail.com)
-
-Instagram: [@ehuler__](https://instagram.com/ehuler__)
+- Organizamos actividades y encuentros.
+- Compartimos información útil para estudiantes.
+- Creamos comunidad entre estudiantes de matemáticas.
