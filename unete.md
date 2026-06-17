@@ -14,4 +14,4 @@ EHULER está abierto a cualquier estudiante con interés por las matemáticas. N
 
 Si te apetece formar parte, rellena el siguiente formulario:
 
-<iframe src="[ÚNETE](https://docs.google.com/forms/d/e/1FAIpQLSeE2YIP09GFVdQlQ8ryCjSYSwPi1uEWbg1mWeor0ajUuk9Pmg/viewform?usp=dialog)" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeE2YIP09GFVdQlQ8ryCjSYSwPi1uEWbg1mWeor0ajUuk9Pmg/viewform?usp=dialog" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
