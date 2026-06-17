@@ -1,6 +1,17 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
+title: EHULER
+permalink: /
 ---
+
+# Ongi etorri
+
+UPV/EHUko matematika ikasleen elkartea gara. Gehitu nahi bazara, bidali mezu bat helbide honetara:
+
+[ehuler.00@gmail.com](mailto:ehuler.00@gmail.com)
+
+# Bienvenido
+
+Somos la asociación de estudiantes de matemáticas de la UPV/EHU. Para asociarte, envía un correo a:
+
+[ehuler.00@gmail.com](mailto:ehuler.00@gmail.com)
