@@ -8,17 +8,23 @@
       {% assign about_url = "/eu/nor-gara/" %}
       {% assign events_url = "/eu/ekitaldiak/" %}
       {% assign contact_url = "/eu/kontaktua/" %}
+      {% assign join_url = "/eu/batu/" %}
+      {% assign home_text = "Hasiera" %}
       {% assign about_text = "Nor gara" %}
       {% assign events_text = "Ekitaldiak" %}
       {% assign contact_text = "Kontaktua" %}
-    {% else %}
+      {% assign join_text = "Batu" %}
+     {% else %}
       {% assign home_url = "/" %}
       {% assign about_url = "/quienes-somos/" %}
       {% assign events_url = "/eventos/" %}
       {% assign contact_url = "/contacto/" %}
+      {% assign join_url = "/unete/" %}
+      {% assign home_text = "Inicio" %}
       {% assign about_text = "Quiénes somos" %}
       {% assign events_text = "Eventos" %}
       {% assign contact_text = "Contacto" %}
+      {% assign join_text = "Únete" %}
     {% endif %}
 
     <a class="site-title" rel="author" href="{{ home_url | relative_url }}">
@@ -36,10 +42,11 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link" href="{{ home_url | relative_url }}">Inicio</a>
+        <a class="page-link" href="{{ home_url | relative_url }}">{{ home_text }}</a>
         <a class="page-link" href="{{ about_url | relative_url }}">{{ about_text }}</a>
         <a class="page-link" href="{{ events_url | relative_url }}">{{ events_text }}</a>
         <a class="page-link" href="{{ contact_url | relative_url }}">{{ contact_text }}</a>
+        <a class="page-link" href="{{ join_url | relative_url }}">{{ join_text }}</a>
 
         {% assign spanish_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
         {% assign basque_page = site.pages | where: "ref", page.ref | where: "lang", "eu" | first %}
