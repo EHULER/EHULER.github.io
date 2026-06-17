@@ -14,4 +14,4 @@ EHULER matematikarekiko interesa duen edozein ikaslerentzat dago zabalik. Ez da 
 
 Parte hartu nahi baduzu, bete hurrengo formularioa:
 
-<iframe src="AQUI_VA_EL_ENLACE_DEL_FORMULARIO" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Kargatzen…</iframe>
+<iframe src="[PARTE HARTU](https://docs.google.com/forms/d/e/1FAIpQLSeE2YIP09GFVdQlQ8ryCjSYSwPi1uEWbg1mWeor0ajUuk9Pmg/viewform?usp=dialog)" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Kargatzen…</iframe>
