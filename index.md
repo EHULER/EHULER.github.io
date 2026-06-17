@@ -1,17 +1,25 @@
 ---
 layout: page
-title: EHULER
+title: Inicio
 permalink: /
+lang: es
+ref: home
 ---
 
-# Ongi etorri
+# EHULER
 
-UPV/EHUko matematika ikasleen elkartea gara. Gehitu nahi bazara, bidali mezu bat helbide honetara:
+Somos la asociación de estudiantes de matemáticas de la UPV/EHU.
+
+Nuestro objetivo es reunir al alumnado de matemáticas, organizar actividades y compartir información útil para estudiantes.
+
+## Participa
+
+Si quieres formar parte de EHULER o ponerte en contacto con la asociación, escríbenos a:
 
 [ehuler.00@gmail.com](mailto:ehuler.00@gmail.com)
 
-# Bienvenido
+## Enlaces
 
-Somos la asociación de estudiantes de matemáticas de la UPV/EHU. Para asociarte, envía un correo a:
-
-[ehuler.00@gmail.com](mailto:ehuler.00@gmail.com)
+- [Quiénes somos](/quienes-somos/)
+- [Eventos](/eventos/)
+- [Contacto](/contacto/)
