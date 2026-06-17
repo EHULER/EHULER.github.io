@@ -6,11 +6,11 @@ lang: es
 ref: unete
 ---
 
-# Únete a EHULER
+# Sé parte de EHULER
 
-¿Te gustan las matemáticas? ¿Quieres conocer a más gente del grado, participar en actividades, proponer ideas o simplemente estar al tanto de lo que se organiza?
+¿Te gustan las matemáticas? ¿Quieres conocer a más personas afines con las que participar en actividades, proponer ideas o simplemente estar al tanto de lo que se organiza?
 
-EHULER está abierto a cualquier estudiante con interés por las matemáticas. No hace falta tener experiencia previa ni comprometerse a nada desde el primer día: puedes unirte para recibir información, participar cuando puedas o ayudarnos a construir una comunidad matemática más activa en la UPV/EHU.
+EHULER está abierto a cualquier estudiante con interés por las matemáticas. No hace falta tener experiencia previa ni comprometerse a nada desde el primer día: puedes unirte para recibir información, participar cuando puedas o ayudarnos a construir una comunidad matemática más activa en Euskadi.
 
 Si te apetece formar parte, rellena el siguiente formulario:
 
