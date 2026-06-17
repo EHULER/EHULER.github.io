@@ -6,7 +6,7 @@ lang: eu
 ref: unete
 ---
 
-# Batu EHULERera
+# EHULERren parte izan!
 
 Matematika gustuko duzu? Graduko jende gehiago ezagutu nahi duzu, jardueretan parte hartu, ideiak proposatu edo antolatzen dugunaren berri izan?
 
