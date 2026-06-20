@@ -1,0 +1,52 @@
+// Placeholder to allow overriding predefined variables smoothly.
+
+// Project fonts (copied to /assets/fonts)
+@font-face {
+  font-family: 'EHUSerif';
+  src: url('/assets/fonts/EHUSerif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EHUSerif';
+  src: url('/assets/fonts/EHUSerif-italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EHUSerif';
+  src: url('/assets/fonts/EHUSerif-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EHUSans';
+  src: url('/assets/fonts/EHUSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EHUSans';
+  src: url('/assets/fonts/EHUSans-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EHUSans';
+  src: url('/assets/fonts/EHUSans-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+$base-font-family: 'EHUSerif', 'EHUSans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;

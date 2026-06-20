@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How to write posts for this Jekyll site | Euskal Herriko Matematika Ikasleen Elkartea - EHULER</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="How to write posts for this Jekyll site" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/HOW_TO_WRITE_POSTS.html" />
+<meta property="og:url" content="http://localhost:4000/HOW_TO_WRITE_POSTS.html" />
+<meta property="og:site_name" content="Euskal Herriko Matematika Ikasleen Elkartea - EHULER" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How to write posts for this Jekyll site" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"How to write posts for this Jekyll site","url":"http://localhost:4000/HOW_TO_WRITE_POSTS.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Euskal Herriko Matematika Ikasleen Elkartea - EHULER" /></head>
+<body><header class="site-header" role="banner">
+  
+  <div class="wrapper">
+
+    
+
+    
+    <a class="site-logo" rel="author" href="/">
+      <img src="favicon.svg" alt="Logo EHULER" class="site-logo">
+    </a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link" href="/">Inicio</a>
+        <a class="page-link" href="/quienes-somos/">Quiénes somos</a>
+        <a class="page-link" href="/eventos/">Eventos</a>
+        <a class="page-link" href="/contacto/">Contacto</a>
+        <a class="page-link" href="/unete/">Únete</a>
+
+        
+        
+
+        <select class="language-selector" onchange="if (this.value) window.location.href=this.value;">
+          
+            <option value="/quienes-somos/" selected>
+              Castellano
+            </option>
+          
+
+          
+            <option value="/eu/batu/" >
+              Euskara
+            </option>
+          
+        </select>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+  
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">How to write posts for this Jekyll site</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="how-to-write-posts-for-this-jekyll-site">How to write posts for this Jekyll site</h1>
+
+<p>This guide explains the conventions used in this repository so you can add new blog posts or event posts that integrate with the site layout and language selector.</p>
+
+<p>Where to place posts</p>
+<ul>
+  <li>Place post files in the <code class="language-plaintext highlighter-rouge">_posts/</code> directory.</li>
+  <li>Filenames must use Jekyll’s format: <code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.md</code> (example: <code class="language-plaintext highlighter-rouge">2026-06-18-mi-evento.md</code>).</li>
+</ul>
+
+<h2 id="required-front-matter">Required front matter</h2>
+<p>Add YAML front matter at the top of each post. Minimal example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: "Mi título de evento"
+date: 2026-06-18 10:00:00 +0200
+lang: es
+ref: my-event-unique-ref
+author: "Nombre"
+categories: eventos
+tags: [conferencia, gratis]
+excerpt: "Resumen corto para listados."
+image: /assets/images/mi-evento.jpg
+---
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">layout</code>: use <code class="language-plaintext highlighter-rouge">post</code> (or whatever layout your theme expects).</li>
+  <li><code class="language-plaintext highlighter-rouge">title</code>: human-readable title.</li>
+  <li><code class="language-plaintext highlighter-rouge">date</code>: used for sorting and permalink generation.</li>
+  <li><code class="language-plaintext highlighter-rouge">lang</code>: <code class="language-plaintext highlighter-rouge">es</code> (Spanish) or <code class="language-plaintext highlighter-rouge">eu</code> (Euskara). The site uses <code class="language-plaintext highlighter-rouge">page.lang</code> in templates.</li>
+  <li><code class="language-plaintext highlighter-rouge">ref</code>: a short identifier shared between translations (see below).</li>
+  <li><code class="language-plaintext highlighter-rouge">categories</code> / <code class="language-plaintext highlighter-rouge">tags</code>: used by the site to group and list posts.</li>
+  <li><code class="language-plaintext highlighter-rouge">excerpt</code> and <code class="language-plaintext highlighter-rouge">image</code>: optional metadata used by index and social cards.</li>
+</ul>
+
+<h2 id="writing-content">Writing content</h2>
+<ul>
+  <li>Write content in Markdown. Use standard GitHub-flavored Markdown for headings, lists, code blocks, images, etc.</li>
+  <li>Store images under <code class="language-plaintext highlighter-rouge">assets/images/</code> and link them with absolute paths, e.g. <code class="language-plaintext highlighter-rouge">/assets/images/mi-evento.jpg</code> so Jekyll’s <code class="language-plaintext highlighter-rouge">relative_url</code> works consistently.</li>
+  <li>You can use Liquid inside posts if you need dynamic values, but prefer plain Markdown for portability.</li>
+  <li>For math, use KaTeX notation (this repo’s templates render KaTeX where configured). Wrap inline math with <code class="language-plaintext highlighter-rouge">$...$</code> and display math with <code class="language-plaintext highlighter-rouge">$$...$$</code>.</li>
+</ul>
+
+<h2 id="translations--multilingual-notes">Translations / multilingual notes</h2>
+<ul>
+  <li>To create a translation of a post, create another post file with the same <code class="language-plaintext highlighter-rouge">ref</code> value and <code class="language-plaintext highlighter-rouge">lang</code> set to the other language (for example one with <code class="language-plaintext highlighter-rouge">lang: es</code> and one with <code class="language-plaintext highlighter-rouge">lang: eu</code>).</li>
+  <li>Example: two files with the same <code class="language-plaintext highlighter-rouge">ref: my-event-unique-ref</code> but different <code class="language-plaintext highlighter-rouge">lang</code> and translated <code class="language-plaintext highlighter-rouge">title</code>/content.</li>
+  <li>Note: the site header currently looks for pages with matching <code class="language-plaintext highlighter-rouge">ref</code> to build the language selector. If you need the language selector to switch between posts, adapt <code class="language-plaintext highlighter-rouge">_includes/header.html</code> to search <code class="language-plaintext highlighter-rouge">site.posts</code> (instead of <code class="language-plaintext highlighter-rouge">site.pages</code>), or create page wrappers that reference the posts.</li>
+</ul>
+
+<h2 id="permalinks-and-linking">Permalinks and linking</h2>
+<ul>
+  <li>Jekyll will build permalinks from your post’s date and slug by default. Use `` in templates to link safely.</li>
+</ul>
+
+<h2 id="preview-locally">Preview locally</h2>
+<p>To preview the site locally (requires Ruby + Bundler + the Gemfile in repo):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install
+</span>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>
+</code></pre></div></div>
+
+<p>Then open http://127.0.0.1:4000 in your browser.</p>
+
+<h2 id="good-practices">Good practices</h2>
+<ul>
+  <li>Keep <code class="language-plaintext highlighter-rouge">ref</code> values short and unique (use hyphenated slugs).</li>
+  <li>Write a short <code class="language-plaintext highlighter-rouge">excerpt</code> (1 sentence) used for lists and RSS.</li>
+  <li>Add an <code class="language-plaintext highlighter-rouge">image</code> at 1200×630 for good social previews.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">tags</code> consistently so listings and filters work.</li>
+</ul>
+
+<p>If you want, I can also:</p>
+<ul>
+  <li>Add a post template file under <code class="language-plaintext highlighter-rouge">_drafts/</code> or <code class="language-plaintext highlighter-rouge">CONTRIBUTING.md</code> with copy-paste front matter.</li>
+  <li>Update <code class="language-plaintext highlighter-rouge">_includes/header.html</code> to support language switching for posts.</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Euskal Herriko Matematika Ikasleen Elkartea - EHULER</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Euskal Herriko Matematika Ikasleen Elkartea - EHULER</li><li><a class="u-email" href="mailto:ehuler.00@gmail.com">ehuler.00@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://instagram.com/ehuler__"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">ehuler__</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

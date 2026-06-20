@@ -1,29 +1,5 @@
 <header class="site-header" role="banner">
-  <style>
-    /* Inline EHU Serif to ensure it loads and applies */
-    @font-face {
-      font-family: 'EHUSerif';
-      src: url('/assets/fonts/EHUSerif.otf') format('opentype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'EHUSerif';
-      src: url('/assets/fonts/EHUSerif-italic.otf') format('opentype');
-      font-weight: 400;
-      font-style: italic;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'EHUSerif';
-      src: url('/assets/fonts/EHUSerif-Bold.otf') format('opentype');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-    body, p, h1, h2, h3, h4, h5, h6 { font-family: 'EHUSerif', serif; }
-  </style>
+  
   <div class="wrapper">
 
     {% assign current_lang = page.lang | default: "es" %}
@@ -51,9 +27,8 @@
       {% assign contact_text = "Contacto" %}
       {% assign join_text = "Únete" %}
     {% endif %}
-
-    <a class="site-title" rel="author" href="{{ home_url | relative_url }}">
-      EHULER
+    <a class="site-logo" rel="author" href="{{ home_url | relative_url }}">
+      <img src="favicon.svg" alt="Logo EHULER" class="site-logo">
     </a>
 
     <nav class="site-nav">
@@ -95,17 +70,4 @@
   </div>
 </header>
 
-<style>
-  .language-selector {
-    margin-left: 15px;
-    padding: 4px 8px;
-    font-size: 14px;
-  }
-
-  @media screen and (max-width: 600px) {
-    .language-selector {
-      display: block;
-      margin: 8px 10px;
-    }
-  }
-</style>
+  
