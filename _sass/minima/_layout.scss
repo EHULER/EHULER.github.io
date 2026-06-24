@@ -11,6 +11,46 @@
   border-bottom: 1px solid $border-color-01;
 }
 
+/* Limit flex to header wrapper only to avoid changing other .wrapper uses */
+.site-header > .wrapper {
+  display: flex;
+  align-items: center;
+  gap: $spacing-unit;
+}
+
+.site-header > .wrapper .site-nav {
+  float: none;
+  display: flex;
+  flex: 1 1 auto; /* occupy remaining space to the right of the logo */
+  justify-content: flex-end; /* push menu to the right */
+  align-items: center;
+}
+
+.site-header > .wrapper .site-title {
+  float: none;
+  margin: 0;
+}
+
+.site-header .site-logo img {
+  height: 96px; // logo más grande
+  width: auto;
+  display: block;
+}
+
+.site-header > .wrapper .trigger {
+  float: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: $spacing-unit * 0.5;
+}
+
+.site-header > .wrapper .trigger .page-link {
+  flex: 1 1 auto; /* distribute links equally */
+  text-align: center;
+  padding: ($spacing-unit * 0.15) ($spacing-unit * 0.3);
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
@@ -126,6 +166,25 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+}
+
+/* Make footer columns and social links sit on one line when possible */
+.site-footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-unit;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-col-wrapper {
+  display: flex;
+  align-items: center;
+  gap: $spacing-unit;
+}
+
+.site-footer .social-links {
+  margin-left: auto;
 }
 
 .footer-heading {

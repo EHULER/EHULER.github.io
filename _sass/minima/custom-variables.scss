@@ -49,4 +49,7 @@
   font-display: swap;
 }
 
-$base-font-family: 'EHUSerif', 'EHUSans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$base-font-family:  'EHUSans','EHUSerif', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+
+// Reduce page side margins by increasing content width
+$content-width: 1500px;

@@ -80,7 +80,7 @@ html { font-size: 16px; }
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 "EHUSerif", "EHUSans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif; color: #414141; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
+body { font: 400 16px/1.5 "EHUSans", "EHUSerif", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif; color: #414141; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, div.highlight, figure.highlight { margin-bottom: 15px; }
@@ -137,7 +137,7 @@ figure.highlight td.code { width: 100%; }
 code.highlighter-rouge { padding: 1px 5px; font-size: 14px; border: 1px solid #e7e7e7; border-radius: 3px; }
 
 /** Wrapper */
-.wrapper { max-width: 800px; margin: 0 auto; padding: 0 30px; }
+.wrapper { max-width: 1500px; margin: 0 auto; padding: 0 30px; }
 @media screen and (max-width: 600px) { .wrapper { padding-right: 18px; padding-left: 18px; } }
 
 /** Clearfix */
@@ -161,6 +161,19 @@ table td { border: 1px solid #e7e7e7; }
 /** Site header */
 .site-header { position: relative; width: 100%; min-height: 55.95px; line-height: 54px; background-color: #fdfdfd; border-top: 5px solid #414141; border-bottom: 1px solid #e7e7e7; }
 
+/* Limit flex to header wrapper only to avoid changing other .wrapper uses */
+.site-header > .wrapper { display: flex; align-items: center; gap: 30px; }
+
+.site-header > .wrapper .site-nav { float: none; display: flex; flex: 1 1 auto; /* occupy remaining space to the right of the logo */ justify-content: flex-end; /* push menu to the right */ align-items: center; }
+
+.site-header > .wrapper .site-title { float: none; margin: 0; }
+
+.site-header .site-logo img { height: 96px; width: auto; display: block; }
+
+.site-header > .wrapper .trigger { float: none; margin: 0; display: flex; align-items: center; gap: 15px; }
+
+.site-header > .wrapper .trigger .page-link { flex: 1 1 auto; /* distribute links equally */ text-align: center; padding: 4.5px 9px; }
+
 .site-title { font-size: 1.625rem; font-weight: 300; letter-spacing: -1px; margin-bottom: 0; float: left; }
 @media screen and (max-width: 600px) { .site-title { padding-right: 45px; } }
 .site-title, .site-title:visited { color: #414141; }
@@ -183,6 +196,13 @@ table td { border: 1px solid #e7e7e7; }
 
 /** Site footer */
 .site-footer { border-top: 1px solid #e7e7e7; padding: 30px 0; }
+
+/* Make footer columns and social links sit on one line when possible */
+.site-footer .wrapper { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+
+.site-footer .footer-col-wrapper { display: flex; align-items: center; gap: 30px; }
+
+.site-footer .social-links { margin-left: auto; }
 
 .footer-heading { font-size: 1.125rem; margin-bottom: 15px; }
 
