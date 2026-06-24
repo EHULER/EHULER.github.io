@@ -1,0 +1,33 @@
+<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        {% assign author_name = site.author.name | default: site.title %}
+        {% assign author_email = site.author.email | default: site.email %}
+
+        <ul class="contact-list">
+          {% if author_name %}
+            <li class="p-name">{{ author_name | escape }}</li>
+          {% endif %}
+          {% if author_email %}
+            <li><a class="u-email" href="mailto:{{ author_email }}">{{ author_email }}</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>{% if site.description %}{{ site.description | escape }}{% else %}{{ site.title | escape }}{% endif %}</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>
